@@ -1,0 +1,59 @@
+.comments
+  padding-bottom: 30px
+
+.comments-head
+  @include flex-between
+
+  // &__title
+
+  &__buttons
+    @include flex-center
+    gap: 18px
+    button
+      @include flex-center
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      border: none
+      outline: none
+      cursor: pointer
+      background-color: $red
+
+      &.swiper-button-disabled
+        background-color: $green
+
+
+  // &__prev-button
+
+  // &__next-button
+
+
+// .comments-swiper
+  // margin-top: 40px
+
+.comments-slide
+  // max-width: 1020px
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07)
+  border-radius: 24px
+  padding: 30px
+  @include flex-start
+  gap: 36px
+  &__img
+    flex: 0 0 306px
+    height: 305px
+    border-radius: 50%
+    overflow: hidden
+
+  // &__main
+
+  &__title
+    @include font($fw: 700, $fz: 30px, $lh: 125%)
+
+  &__text
+    margin-top: 18px
+    @include font($fw: 400, $fz: 20px, $lh: 140%)
+    color: $green
+
+.swiper-wrapper
+  padding: 50px
+  background-color: $white

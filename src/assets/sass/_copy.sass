@@ -1,0 +1,68 @@
+.buy
+  padding-bottom: 80px
+  &__row
+    @include flex-center
+    align-items: stretch
+    gap: 30px
+
+.buy-card
+  flex: 1
+  background-color: $gray-2
+  border-radius: 12px
+  padding: 57px 42px
+
+  &__title
+    @include font($fw: 600, $fz: 16px, $lh: 22px)
+    color: $red
+    text-transform: uppercase
+  &__price
+    margin-top: 24px
+    @include font($fw: 700, $fz: 40px, $lh: 125%)
+
+  // &__list
+
+  &__label
+    @include font($fw: 700, $fz: 16px, $lh: 150%)
+    text-transform: uppercase
+    color: $gray-4
+    display: block
+    width: 100%
+    margin-top: 18px
+    &:first-child
+      margin-top: 24px
+
+  &__input
+    width: 100%
+    margin-top: 12px
+    padding: 15px 18px
+    @include font($fw: 600, $fz: 16px, $lh: 150%)
+    border: 1px solid #9D9D9D
+    border-radius: 12px
+    &::placeholder
+      @include font($fw: 400, $fz: 16px, $lh: 150%)
+      color: $gray-5
+      
+
+  &__button
+    margin-top: 35px
+
+.card-list
+
+  &__item
+    margin-top: 24px
+    @include flex-start
+    gap: 17px
+
+    &:first-child
+      margin-top: 21px
+
+  &__icon
+    width: 36px
+    height: 36px
+    background-color: $white
+    border-radius: 50%
+    @include flex-center
+
+  &__text
+    @inlcude font($fw: 500, $fz: 16px, $lh: 150%)
+

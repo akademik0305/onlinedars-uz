@@ -1,0 +1,129 @@
+.organized
+  padding-bottom: 80px
+  &__row
+    @include flex-start
+    align-items: start
+    gap: 160px
+
+  // &__title
+
+  &__content
+    max-width: 620px
+
+  &__text
+    @include font($fw: 400, $fz: 20px, $lh: 145%)
+
+.organized-cards
+  margin-top: 23px
+  @include flex-start
+  gap: 41px
+
+.organized-card
+  background-color: $green
+  @include flex-center
+  flex-direction: column
+  padding: 14px 40px
+  border-radius: 12px
+
+  &__title
+    @include font($fw: 700, $fz: 30px, $lh: 145%)
+    color: $white
+
+  &__text
+    @include font($fw: 500, $fz: 16px, $lh: 125%)
+    color: $white
+
+.organized-dropdowns
+  margin-top: 12px
+
+.organized-dropdown
+  cursor: pointer
+  margin-top: 30px
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07)
+  border-radius: 12px
+  &.active
+    .organized-dropdown__toogle img
+      transform: rotate(180deg)
+    .organized-dropdown__menu
+      max-height: 500px
+      margin-top: 6px
+      padding: 0 27px 24px 27px
+
+  &__toogle
+    @include flex-start
+    gap: 18px
+    padding: 24px 27px
+    img
+      flex: 0 0 35px
+      height: 35px
+      transition: .5s linear
+
+  &__title
+    @include font($fw: 700, $fz: 24px, $lh: 125%)
+    span
+      font-weight: 400
+
+  &__menu
+    max-height: 0
+    overflow-y: hidden
+    margin-top: 0
+    padding: 0 27px
+    transition: .5s linear
+  &__list
+    margin-top: 8px
+
+  &__item
+    margin-top: 24px
+    @include flex-start
+    @include font($fw: 400, $fz: 18px, $lh: 125%)
+    color: $green-3
+    p
+      margin-left: 65px
+      @include font($fw: 700, $fz: 16px, $lh: 125%)
+      color: #0A0D0F
+  // &__text
+
+.author
+  margin-top: 80px
+  &__row
+    @include flex-center
+    gap: 52px
+
+  &__img
+    flex: 0 0 515px
+    height: 515px
+    border-radius: 50%
+
+  // &__main
+
+  &__title
+    @include font($fw: 600, $fz: 16px, $lh: 22px)
+    text-transform: uppercase
+    color: $red
+
+  &__name
+    margin-top: 24px
+    @include font($fw: 700, $fz: 40px, $lh: 125%)
+    text-transform: uppercase
+
+  &__text
+    margin-top: 21px
+    @include font($fw: 500, $fz: 20px, $lh: 27px)
+
+.author-list
+  margin-top: 9px
+
+  &__item
+    margin-top: 21px
+    @include flex-start
+    gap: 17px
+
+  &__icon
+    flex: 0 0 36px
+    height: 36px
+    border-radius: 50%
+    background-color: #F6F9FF
+    @include flex-center
+
+  &__text
+    @include font($fw: 700, $fz: 16px, $lh: 22px)

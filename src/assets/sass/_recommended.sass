@@ -1,0 +1,63 @@
+.recommended
+  padding-bottom: 80px
+  // &__title
+
+  &__cards
+    margin-top: 5px
+
+.recommended-card
+  margin-top: 30px
+  padding: 18px 24px
+  background-color: $gray-2
+  border-radius: 24px
+  @include flex-start
+  gap: 40px
+  &:nth-child(2)
+    flex-direction: row-reverse
+
+  &__img
+    flex: 0 0 273px
+    width: 273px
+    height: 266px
+    background-color: $white
+    border-radius: 12px
+    @include flex-center
+
+  // &__main
+
+  &__title
+    @include font($fw: 700, $fz: 32px, $lh: 125%)
+
+  &__text
+    margin-top: 24px
+    @include font($fw: 400, $fz: 20px, $lh: 145%)
+    color: $green-2
+
+@media (max-width: 1044px)
+  .recommended-card__img
+    flex: 0 0 196px
+    width: 196px
+    height: 191px
+    img
+      width: 97px
+      height: 140px
+  .recommended-card__title
+    font-size: 20px
+  .recommended-card__text
+    font-size: 16px
+
+  .recommended-card:nth-child(2) .recommended-card__img
+    img
+      width: 135px
+      height: 134px
+  .recommended-card:nth-child(3) .recommended-card__img
+    img
+      width: 113px
+      height: 113px
+
+@media (max-width: 576px)
+  .recommended-card
+    flex-direction: column
+    text-align: center
+  .recommended-card:nth-child(2)
+    flex-direction: column

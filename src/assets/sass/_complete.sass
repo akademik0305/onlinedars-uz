@@ -1,0 +1,85 @@
+.complete
+  padding-bottom: 80px
+  // &__title
+
+  &__main
+    margin-top: 40px
+    border: 1px solid #ABB1B9
+    border-radius: 12px
+
+
+.complete-head
+  @include flex-between
+  padding: 40px
+  border-bottom: 1px solid #ABB1B9
+  &__left
+    @include flex-start
+    gap: 30px
+
+  &__avatar
+    flex: 0 0 141px
+    height: 141px
+    border-radius: 50%
+
+  // &__main
+
+  &__title
+    @include font($fw: 600, $fz: 18px, $lh: 25px)
+    color: $gray-3
+
+  &__name
+    @include font($fw: 700, $fz: 23px, $lh: 31px)
+    span
+      font-weight: 600
+
+  &__right
+    text-align: right
+
+.complete-body
+  padding: 40px 110px 40px 140px
+  border-bottom: 1px solid #ABB1B9
+
+  &__title
+    @include font($fw: 600, $fz: 23px, $lh: 31px)
+    color: $gray-3
+    text-align: center
+
+  &__row
+    margin-top: 30px
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+    // justify-items: center
+    row-gap: 50px
+
+
+  &__item
+    @include font($fw: 600, $fz: 23px, $lh: 31px)
+    position: relative
+    padding-left: 35px
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      background-color: $red
+
+.complete-footer
+  padding: 40px 140px
+  &__row
+    @include flex-start
+    gap: 186px
+  // &__main
+
+  &__title
+    @include font($fw: 700, $fz: 31px, $lh: 125%)
+
+  &__text
+    margin-top: 20px
+    max-width: 450px
+    @include font($fw: 400, $fz: 20px, $lh: 140%)
+
+  // &__img

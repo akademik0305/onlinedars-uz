@@ -1,0 +1,125 @@
+.header
+  position: relative
+  padding-bottom: 153px
+  padding-top: 20px
+
+.navbar
+  padding: 20px 0
+  transition: .6s
+  top: -100px
+  background-color: $white
+  .container
+    padding: 0
+
+  &.sticky
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 100
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1)
+
+  &__row
+    @include flex-between
+  &__logo
+    width: 230px
+    height: 38px
+    img
+      width: 100%
+      height: 100%
+  // &__button
+
+  &-menu
+    @include flex-center
+    gap: 30px
+
+    // &__item
+
+    &__link
+      @include font($fw: 700, $fz: 16px, $lh: 22px)
+      color: $black
+
+.header-main
+  // &__row
+    // @include flex-center
+  &__content
+    margin-top: 154px
+    max-width: 630px
+
+  &__text
+    @include font($fw: 400, $fz: 16px, $lh: 22px)
+    text-transform: uppercase
+  &__title
+    margin-top: 24px
+
+  &__img-bg
+    height: 598px
+    position: absolute
+    top: 177px
+    right: 0
+    background-color: $gray
+    border-top-left-radius: 300px
+    border-bottom-left-radius: 300px
+    padding: 20px
+    // margin-right: 111px
+    padding: 20px 200px 20px 20px
+  &__img
+    height: 558px
+    width: 558px
+    border-radius: 50%
+    @include flex-center
+    background-color: $white
+
+.header-advantages
+  margin-top: 60px
+  &__title
+    @include font($fw: 700, $fz: 24px, $lh: 33px)
+  &__row
+    margin-top: 30px
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 58px
+    row-gap: 30px
+
+  &__item
+    @include flex-start
+    gap: 20px
+
+  &__img
+    flex: 0 0 73px
+    height: 73px
+    border-radius: 50%
+    @include flex-center
+    background-color: #FFE6E6
+
+  &__text
+    max-width: 165px
+    @include font($fw: 500, $fz: 20px, $lh: 27px)
+
+@media (max-width: 1600px)
+  .header-main__img-bg
+    padding-right: 120px
+
+@media (max-width: 1440px)
+  .header-main__img-bg
+    padding-right: 40px
+
+@media (max-width: 1300px)
+  .header-main__img-bg
+    top: 200px
+    padding-right: 40px
+    width: 560px
+    height: 540px
+  .header-main__img
+    width: 500px
+    height: 500px
+
+@media (max-width: 1200px)
+  .navbar-menu__link
+    font-size: 14px
+  .navbar__logo
+    width: 200px
+    height: auto
+  .buy-button
+    width: 220px
+    font-size: 16px

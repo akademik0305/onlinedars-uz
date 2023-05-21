@@ -1,0 +1,57 @@
+.choose
+  padding-bottom: 80px
+  &__row
+    display: grid
+    grid-template-columns: 500px 1fr
+    gap: 30px
+
+  &__title
+    margin: 0 0 30px 76px
+
+.choose-item
+  background-color: $white
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12)
+  border-radius: 12px
+  padding: 28px 27px
+  @include flex-start
+  gap: 22px
+
+  &__img
+    flex: 0 0 106px
+    width: 106px
+    height: 106px
+    background-color: #F6F9FF
+    border-radius: 50%
+    @include flex-center
+
+  // &__main
+
+  &__title
+    @include font($fw: 700, $fz: 24px, $lh: 125%)
+
+  &__text
+    margin-top: 12px
+    @include font($fw: 400, $fz: 18px, $lh: 140%)
+
+@media ( max-width: 1200px)
+  .choose__row
+    grid-template-columns: 400px 1fr
+  .choose__title
+    margin: 0
+
+@media (max-width: 1044px)
+  .choose__row
+    grid-template-columns: 1fr 1fr
+
+@media (max-width: 860px)
+  .choose__row
+    grid-template-columns: 1fr
+  .choose__title
+    grid-row-start: 1
+  .choose-item
+    flex-direction: row
+
+@media ( max-width: 425px )
+  .choose-item
+    flex-direction: column
+  
