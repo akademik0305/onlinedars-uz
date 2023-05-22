@@ -7,13 +7,10 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
       </p>
       <div class="about-course__video">
-        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="1103.6" height="620"
-          type="text/html"
-          src="https://www.youtube.com/embed/DBXH9jJRaDk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
-          <div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode pl</a></small></div>
-          <div><small><a href="https://laddbox.io/">laddbox.io</a></small></div>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/J4BYLZt6Q8w" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </div>
-  </div>
-</template>
+</div></template>

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="comments-head">
         <h2 class="comments-head__title main-title">Kurs haqida <span>izohlar</span></h2>
-        <div class="comments-head__buttons">
+        <div class="comments-head__buttons prev-buttons">
           <button class="comments-head__prev-button">
             <img src="@/assets/images/icons/arrow-left.svg" alt="prev">
           </button>
@@ -13,9 +13,9 @@
           </button>
         </div>
       </div>
-      <swiper class="comments-swiper" :slides-per-view="4/3" :loop="false" :space-between="30" :modules="modules"
-      :navigation="{prevEl: '.comments-head__prev-button', nextEl: '.comments-head__next-button'}"
-      >
+      <swiper class="comments-swiper" :slides-per-view="1" :loop="false" :space-between="30" :modules="modules"
+        :breakpoints="breakpoints"
+        :navigation="{ prevEl: '.comments-head__prev-button', nextEl: '.comments-head__next-button' }">
         <!-- Swiper slide -->
         <swiper-slide class="comments-slide">
           <div class="comments-slide__img">
@@ -80,8 +80,15 @@
             </p>
           </div>
         </swiper-slide>
-
       </swiper>
+      <div class="comments-head__buttons next-buttons">
+        <button class="comments-head__prev-button">
+          <img src="@/assets/images/icons/arrow-left.svg" alt="prev">
+        </button>
+        <button class="comments-head__next-button">
+          <img src="@/assets/images/icons/arrow-right.svg" alt="next">
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -93,11 +100,17 @@ import { Navigation } from 'swiper';
 
 components: {
   Swiper,
-  SwiperSlide
+    SwiperSlide
 }
 
-const modules = [ Navigation ]
+const modules = [Navigation]
 
-
+const breakpoints = {
+  // when window width is >= 320px
+  874: {
+    slidesPerView: 4 / 3,
+    // spaceBetween: 20
+  },
+}
 
 </script>

@@ -7,7 +7,6 @@
     column-gap: 53px
     row-gap: 41px
 
-
 .payment-head
   @include flex-between
   &__main
@@ -39,3 +38,34 @@
     @include font($fw: 600, $fz: 20px, $lh: 150%)
     color: #035DB0
     text-decoration: underline
+
+@media (max-width: 1200px)
+  .payment-head
+    &__main
+      flex: 1
+    &__img
+      flex: 1
+      height: auto
+
+@media (max-width: 874px)
+  .payment-head
+    flex-direction: column
+    text-align: center
+    &__main
+      max-width: 720px
+
+    &__img
+      width: 100%
+
+    &__text
+      margin-top: 12px
+      font-size: 16px
+
+  .payment__row
+    margin-top: 18px
+    grid-template-columns: 1fr
+    gap: 30px
+
+  .payment-item
+    &__link
+      font-size: 16px

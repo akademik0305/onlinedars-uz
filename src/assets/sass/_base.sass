@@ -8,11 +8,16 @@
   text-decoration: none
   font-family: $pr-font
 
+@mixin media($w)
+  @media (max-width: $w)
+  @content
+
 .container
   width: 100%
   max-width: 1280px
   margin: 0 auto
   padding: 0 20px
+
 
   @media (max-width: 1440px)
     max-width: 1200px
@@ -47,10 +52,10 @@
   span
     color: $red
 
-  @media ( max-width: 425px )
+  @media ( max-width: 450px )
     @include font($fw: 700, $fz: 28px, $lh: 140%)
     text-align: center
-    
+
 button
   background-color: transparent
   border: none

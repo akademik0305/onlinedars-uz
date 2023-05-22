@@ -38,7 +38,7 @@
             </p>
             <ul class="organized-dropdown__list">
               <li class="organized-dropdown__item">
-                23- dars
+                <span>23- dars</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </li>
             </ul>
@@ -58,15 +58,15 @@
             </p>
             <ul class="organized-dropdown__list">
               <li class="organized-dropdown__item">
-                23- dars
+                <span>23- dars</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </li>
               <li class="organized-dropdown__item">
-                23- dars
+                <span>23- dars</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </li>
               <li class="organized-dropdown__item">
-                23- dars
+                <span>23- dars</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </li>
             </ul>

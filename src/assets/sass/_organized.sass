@@ -1,11 +1,12 @@
 .organized
   padding-bottom: 80px
   &__row
-    @include flex-start
+    @include flex-between
     align-items: start
-    gap: 160px
+    // gap: 160px
 
-  // &__title
+  &__title
+    max-width: 460px
 
   &__content
     max-width: 620px
@@ -16,6 +17,7 @@
 .organized-cards
   margin-top: 23px
   @include flex-start
+  align-items: stretch
   gap: 41px
 
 .organized-card
@@ -62,6 +64,7 @@
     @include font($fw: 700, $fz: 24px, $lh: 125%)
     span
       font-weight: 400
+      margin-left: 28px
 
   &__menu
     max-height: 0
@@ -75,8 +78,10 @@
   &__item
     margin-top: 24px
     @include flex-start
-    @include font($fw: 400, $fz: 18px, $lh: 125%)
     color: $green-3
+    span
+      @include font($fw: 400, $fz: 18px, $lh: 125%)
+      min-width: 70px
     p
       margin-left: 65px
       @include font($fw: 700, $fz: 16px, $lh: 125%)
@@ -93,6 +98,9 @@
     flex: 0 0 515px
     height: 515px
     border-radius: 50%
+    img
+      width: 100%
+      height: 100%
 
   // &__main
 
@@ -127,3 +135,54 @@
 
   &__text
     @include font($fw: 700, $fz: 16px, $lh: 22px)
+
+@media (max-width: 1440px)
+  .organized
+    &__row
+      gap: 20px
+
+@media (max-width: 1200px)
+  .organized
+    &__content
+      max-width: 500px
+
+  .author
+    &__row
+      gap: 30px
+    &__img
+      flex: 0 0 400px
+      height: 400px
+    &__name
+      font-size: 36px
+
+@media (max-width: 874px)
+  .organized
+    &__row
+      flex-direction: column
+    &__title
+      text-align: center
+      max-width: 459px
+      width: 100%
+      margin: 0 auto
+    &__content
+      text-align: center
+      max-width: 100%
+
+  .organized-cards
+    gap: 30px
+  .organized-card
+    flex: 1
+
+  .author
+    &__row
+      flex-direction: column
+    &__img
+      height: auto
+      width: 100%
+      max-width: 717px
+      max-height: 717px
+      img
+        object-fit: contain
+    &__main
+      padding: 0 55px
+      text-align: center

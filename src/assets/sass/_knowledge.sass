@@ -29,3 +29,38 @@
     color: $green-2
 
 
+@media (max-width: 1044px)
+  .knowledge
+    &__row
+      gap: 50px
+    &__img
+      flex: 1
+      height: auto
+    &__main
+      flex: 1
+
+@media (max-width: 874px)
+  .knowledge
+    &__row
+      flex-direction: column
+    &__img
+      width: 70vw
+    &__main
+      text-align: center
+      max-width: 100%
+      padding: 0 55px
+
+@media (max-width: 576px)
+  .knowledge
+    &__img
+      width: 100%
+      padding: 0 20px
+    &__main
+      padding: 0
+
+@media (max-width: 425px)
+  .knowledge
+    &__sub-title
+      @include font($fw: 600, $fz: 20px, $lh: 140%)
+    &__text
+      font-size: 16px
