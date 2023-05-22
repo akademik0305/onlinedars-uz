@@ -214,8 +214,68 @@
 
   .header-main
     padding: 0 73px
-    margin: 600px auto 0
+    margin: 650px auto 0
     max-width: 100%
     &__content
       max-width: 100%
       width: 100%
+
+  .navbar.sticky
+    & ~ .header-main
+      padding-top: 80px
+
+@media (max-width: 788px)
+  .header-main__img-bg
+    top: 150px
+    width: 95%
+    margin-left: 20px
+    height: 500px
+    padding: 20px 360px 20px 20px
+  .header-main
+    padding: 0
+    margin-top: 550px
+  .header-main__img
+    width: 460px
+    height: 460px
+
+@media (max-width: 576px)
+  .navbar
+    &__button
+      display: none
+  .header-advantages
+    &__item
+      flex-direction: column
+      text-align: center
+    &__img
+      width: 73px
+      height: 73px
+
+  .header-main__img-bg
+    top: 120px
+    width: 95%
+    margin-left: 20px
+    height: 390px
+    padding: 10px 160px 10px 10px
+  .header-main
+
+    margin-top: 450px
+  .header-main__img
+    width: 370px
+    height: 370px
+    img
+      width: 305px
+
+@media (max-width: 450px)
+  .header-main__img-bg
+    top: 120px
+    width: 95%
+    margin-left: 20px
+    height: 268px
+    padding: 9px 160px 9px 9px
+  .header-main
+    margin-top: 340px
+  .header-main__img
+    width: 250px
+    height: 250px
+    img
+      width: 235px

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="burger">
+    <div class="burger" @click="closeBurger()">
       <ul class="burger-menu">
         <li class="burger-menu__item"><a href="#about-course" v-smooth-scroll class="burger-menu__link">Muallifdan
             video</a></li>
@@ -109,16 +109,16 @@ onMounted(() => {
 
 })
 
+// open menu burger
 function openBurger() {
   const burger = document.querySelector('.burger')
-  console.log(burger)
   burger.classList.add('active')
 }
 
+// close menu burger
 function closeBurger() {
   const burger = document.querySelector('.burger')
   burger.classList.remove('active')
-  console.log(burger)
 }
 
 
