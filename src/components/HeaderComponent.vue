@@ -1,29 +1,47 @@
 <template>
   <div class="header">
-    <div class="container">
-      <!-- navbar -->
-      <div class="navbar">
-        <div class="container">
-          <div class="navbar__row">
-            <div class="navbar__logo">
-              <img src="@/assets/images/logo/logo-png.png" alt="Onlinedars">
-            </div>
-            <ul class="navbar-menu">
-              <li class="navbar-menu__item"><a href="#about-course" v-smooth-scroll class="navbar-menu__link">Muallifdan
-                  video</a></li>
-              <li class="navbar-menu__item"><a href="#about-author" v-smooth-scroll class="navbar-menu__link">Muallif
-                  haqida</a></li>
-              <li class="navbar-menu__item"><a href="#organized" v-smooth-scroll class="navbar-menu__link">Kurs qanday
-                  tashkil topgan</a></li>
-              <li class="navbar-menu__item"><a href="#comments" v-smooth-scroll class="navbar-menu__link">Izohlar</a></li>
-            </ul>
-            <button class="navbar__button buy-button">SOTIB OLISH</button>
+    <div class="burger">
+      <ul class="burger-menu">
+        <li class="burger-menu__item"><a href="#about-course" v-smooth-scroll class="burger-menu__link">Muallifdan
+            video</a></li>
+        <li class="burger-menu__item"><a href="#about-author" v-smooth-scroll class="burger-menu__link">Muallif
+            haqida</a></li>
+        <li class="burger-menu__item"><a href="#organized" v-smooth-scroll class="burger-menu__link">Kurs qanday
+            tashkil topgan</a></li>
+        <li class="burger-menu__item"><a href="#comments" v-smooth-scroll class="burger-menu__link">Izohlar</a></li>
+        <button class="burger__close" @click="closeBurger">
+          <img src="@/assets/images/icons/x.svg" alt="close" />
+        </button>
+        <button class="burger__buy buy-button">Sotib olish</button>
+      </ul>
+    </div>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar__row">
+          <div class="navbar__logo">
+            <img src="@/assets/images/logo/logo-png.png" alt="Onlinedars">
           </div>
+          <ul class="navbar-menu">
+            <li class="navbar-menu__item"><a href="#about-course" v-smooth-scroll class="navbar-menu__link">Muallifdan
+                video</a></li>
+            <li class="navbar-menu__item"><a href="#about-author" v-smooth-scroll class="navbar-menu__link">Muallif
+                haqida</a></li>
+            <li class="navbar-menu__item"><a href="#organized" v-smooth-scroll class="navbar-menu__link">Kurs qanday
+                tashkil topgan</a></li>
+            <li class="navbar-menu__item"><a href="#comments" v-smooth-scroll class="navbar-menu__link">Izohlar</a></li>
+          </ul>
+          <button class="navbar__button buy-button">SOTIB OLISH</button>
+          <button class="navbar__burger" @click="openBurger">
+            <img src="@/assets/images/icons/menu.svg" alt="menu">
+          </button>
         </div>
       </div>
+    </div>
 
-      <!-- header-main -->
-      <div class="header-main">
+    <!-- header-main -->
+    <div class="header-main">
+      <div class="container">
         <div class="header-main__row">
           <div class="header-main__content">
             <p class="header-main__text">Umr o’tib ketmoqda....</p>
@@ -90,4 +108,18 @@ onMounted(() => {
   })
 
 })
+
+function openBurger() {
+  const burger = document.querySelector('.burger')
+  console.log(burger)
+  burger.classList.add('active')
+}
+
+function closeBurger() {
+  const burger = document.querySelector('.burger')
+  burger.classList.remove('active')
+  console.log(burger)
+}
+
+
 </script>
