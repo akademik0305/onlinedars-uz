@@ -7,10 +7,9 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
       </p>
       <div class="about-course__video">
-        <iframe src="https://www.youtube.com/embed/J4BYLZt6Q8w" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/380886323?h=bafeff529e" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-</div></template>
+  </div>
+</template>
