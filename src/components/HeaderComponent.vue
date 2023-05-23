@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" id="header">
     <div class="burger" @click="closeBurger()">
       <ul class="burger-menu">
         <li class="burger-menu__item"><a href="#about-course" v-smooth-scroll class="burger-menu__link">Muallifdan
@@ -12,7 +12,7 @@
         <button class="burger__close" @click="closeBurger">
           <img src="@/assets/images/icons/x.svg" alt="close" />
         </button>
-        <button class="burger__buy buy-button">Sotib olish</button>
+        <a href="#buy" v-smooth-scroll class="burger__buy buy-button">Sotib olish</a>
       </ul>
     </div>
     <!-- navbar -->
@@ -20,7 +20,9 @@
       <div class="container">
         <div class="navbar__row">
           <div class="navbar__logo">
-            <img src="@/assets/images/logo/logo-png.png" alt="Onlinedars">
+            <a href="#header" v-smooth-scroll>
+              <img src="@/assets/images/logo/logo-png.png" alt="Onlinedars">
+            </a>
           </div>
           <ul class="navbar-menu">
             <li class="navbar-menu__item"><a href="#about-course" v-smooth-scroll class="navbar-menu__link">Muallifdan
@@ -31,7 +33,7 @@
                 tashkil topgan</a></li>
             <li class="navbar-menu__item"><a href="#comments" v-smooth-scroll class="navbar-menu__link">Izohlar</a></li>
           </ul>
-          <button class="navbar__button buy-button">SOTIB OLISH</button>
+          <a href="#buy" v-smooth-scroll class="navbar__button buy-button">SOTIB OLISH</a>
           <button class="navbar__burger" @click="openBurger">
             <img src="@/assets/images/icons/menu.svg" alt="menu">
           </button>

@@ -52,7 +52,7 @@
     </div>
   </div>
   <!-- buy -->
-  <div class="buy">
+  <div class="buy" id="buy">
     <div class="container">
       <div class="buy__row">
         <!-- buy card -->
