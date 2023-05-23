@@ -96,9 +96,9 @@
             ISM
             <input type="text" class="buy-card__input" id="name" name="name" placeholder="(Fakhriyor)">
           </label>
-          <label for="name" class="buy-card__label">
+          <label for="phone" class="buy-card__label">
             TELEFON RAQAMINGIZ
-            <input type="tel" class="buy-card__input" id="name" name="name" placeholder="+998(99)-123-45-67" value="+998">
+            <input type="tel" class="buy-card__input" id="phone" name="phone" placeholder="+998(99)-123-45-67" value="+998">
           </label>
           <button type="button" class="buy-card__button buy-button">SOTIB OLISH</button>
         </form>

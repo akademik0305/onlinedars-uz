@@ -7,7 +7,7 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
       </p>
       <div class="about-course__video">
-        <iframe src="https://player.vimeo.com/video/380886323?h=bafeff529e" frameborder="0"
+        <iframe title="about-course" src="https://player.vimeo.com/video/380886323?h=bafeff529e" frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
