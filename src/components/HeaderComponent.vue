@@ -86,7 +86,7 @@
           </div>
           <div class="header-main__img-bg">
             <div class="header-main__img">
-              <img src="@/assets/images/header/header-image.png" alt="">
+              <img src="@/assets/images/header/header-image.webp" alt="">
             </div>
           </div>
         </div>
